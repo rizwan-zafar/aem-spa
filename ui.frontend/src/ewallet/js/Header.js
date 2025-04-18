@@ -1,24 +1,24 @@
 import React from 'react';
 import { MapTo } from '@adobe/aem-react-editable-components';
-import '../../styles/Footer.css'; // Make sure this path is correct
+import '../styles/Header.css'; // Make sure this path is correct
 
 const CustomTitleEditConfig = {
   emptyLabel: 'Title',
   isEmpty: (props) => !props || !props['title']
 };
 
-const Footer = (props) => {
+const Header = (props) => {
   const TitleTag = props.type || 'h2';
 
   if (!props['title']) return null;
 
   return (
-    <div className="Footer">
-      <div className="Footer-container">
-        <TitleTag>{props['title']}</TitleTag>
+    <div className="Header">
+      <div className="Header-container">
+        <h1>{props['title']}</h1>
       </div>
     </div>
   );
 };
 
-export default MapTo('etisalat/components/ewallet/footer')(Footer, CustomTitleEditConfig);
+export default MapTo('etisalat/components/ewallet/header')(Header, CustomTitleEditConfig);

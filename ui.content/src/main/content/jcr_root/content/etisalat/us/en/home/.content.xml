@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="cq:Page">
+    jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-10-04T09:50:29.650+02:00"
+        cq:lastModified="{Date}2025-04-18T15:07:31.870+05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/etisalat/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -14,13 +14,15 @@
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <text
+                <about
+                    jcr:created="{Date}2025-04-18T15:00:21.118+05:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-18T15:07:11.312+05:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="etisalat/components/text"
-                    text="&lt;p>Hello World!&lt;/p>"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured"/>
-                </text>
+                    sling:resourceType="etisalat/components/ewallet/about"
+                    description=" I am an AEM Developer passionate about building scalable and performant digital experiences. I specialize in developing custom components, integrating third-party services, and optimizing content authoring using Adobe Experience Manager."
+                    name="Hey I am Rizwan Zafar"/>
             </responsivegrid>
         </root>
     </jcr:content>

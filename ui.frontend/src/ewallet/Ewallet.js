@@ -1,13 +1,15 @@
 // Ewallet.js
 import React from 'react';
-import Header from './js/Header/Header';
-import Footer from './js/Footer/Footer';
+import Header from './js/Header';
+import About from './js/About';
+import Footer from './js/Footer';
 
 const Ewallet = () => {
   return (
     <div>
       <Header />
-      <h1>testing</h1>
+      <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br />
+      <About />
       <Footer />
     </div>
   );
