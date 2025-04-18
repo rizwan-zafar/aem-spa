@@ -1,0 +1,50 @@
+# Maven target directories
+**/target/
+**/logs/
+
+# IntelliJ / Eclipse / VSCode settings
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+
+# Node.js / React frontend stuff
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+dist/
+build/
+tmp/
+.temp/
+.cache/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Mac and Linux backup files
+*~
+*.swp
+*.swo
+
+# AEM-specific exclusions
+/crx-quickstart/
+/*.bak
+/.vlt
+/.vltignore
+/.content.xml
+
+# Git itself
+.git/
+.gitignore
+
+# Bundle JARs (optional)
+*.jar
+*.war
+*.ear

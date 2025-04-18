@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/etisalat",
+        "create path (nt:unstructured) /content/dam/etisalat/jcr:content",
+        "set properties on /content/dam/etisalat/jcr:content\n  set cq:conf{String} to /conf/etisalat\n  set jcr:title{String} to \"ewallet\"\nend"
+    ]
+}
