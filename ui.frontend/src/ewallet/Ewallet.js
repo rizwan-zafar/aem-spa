@@ -8,7 +8,7 @@ const Ewallet = () => {
   return (
     <div>
       <Header />
-      <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br />
+      <br /><br /> <br /><br />
       <About />
       <Footer />
     </div>

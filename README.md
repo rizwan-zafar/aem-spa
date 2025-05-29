@@ -70,7 +70,7 @@ flag.
 
 | Property | Description | Default value |
 | --- | --- | --- |
-| `it.author.url` | URL of the author instance | `http://localhost:4504` |
+| `it.author.url` | URL of the author instance | `http://localhost:4502` |
 | `it.author.user` | Admin user for the author instance | `admin` |
 | `it.author.password` | Password of the admin user for the author instance | `admin` |
 | `it.publish.url` | URL of the publish instance | `http://localhost:4503` |
@@ -102,7 +102,7 @@ To run them locally:
     mvn clean verify -Pui-tests-local-execution
 
 This default command requires:
-* an AEM author instance available at http://localhost:4504 (with the whole project built and deployed on it, see `How to build` section above)
+* an AEM author instance available at http://localhost:4502 (with the whole project built and deployed on it, see `How to build` section above)
 * Chrome browser installed at default location
 
 Check README file in `ui.tests` module for more details.

@@ -21,6 +21,44 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="description"
                         name="./description"/>
+                    <cards
+                            cq:dialogMode="edit"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="cards"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <cards
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="true"
+                                    fieldLabel="Add Cards"
+                                    name="./aboutCards">
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./aboutCards">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="image"
+                                                rootPath="/content/dam/etisalat"
+                                                name="./image"/>
+                                        <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="title"
+                                                name="./title"/>
+                                        <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="description"
+                                                name="./description"/>
+                                    </items>
+                                </field>
+                            </cards>
+                        </items>
+                    </cards>
                 </items>
             </column>
         </items>

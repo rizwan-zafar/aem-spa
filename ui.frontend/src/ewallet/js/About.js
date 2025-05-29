@@ -13,14 +13,23 @@ const About = (props) => {
   if (!props.name && !props.description) return null;
 
   return (
-    <div className="About">
-      <div className="About-card">
-        {props.name && <TitleTag className="About-title">{props.name}</TitleTag>}
-        {props.description && <p className="About-description">{props.description}</p>}
- 
-  
-      </div>
-    </div>
+   <div className="container my-5">
+     <div className="row">
+       {props.aboutCardItems?.map((item, index) => (
+         <div className="col-md-4 mb-4" key={index}>
+           <div className="card h-100 shadow-sm">
+             <img src={item.image || 'https://via.placeholder.com/300'} className="card-img-top" alt={item.title} />
+             <div className="card-body">
+               {props.name && <h5 className="card-title">{item.title}</h5>}
+               {props.description && <p className="card-text">{item.description}</p>}
+               <button className="btn btn-success">Test Button</button>
+             </div>
+           </div>
+         </div>
+       ))}
+     </div>
+   </div>
+
   );
 };
 

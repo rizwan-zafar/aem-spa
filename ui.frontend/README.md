@@ -10,13 +10,13 @@ In the project directory, you can run the following commands:
 
 ### `npm start`
 
-Runs the app in development mode by proxying the JSON model from a local AEM instance running at http://localhost:4504. This assumes that the entire project has been deployed to AEM at least once (`mvn clean install -PautoInstallPackage` **in the project root**).
+Runs the app in development mode by proxying the JSON model from a local AEM instance running at http://localhost:4502. This assumes that the entire project has been deployed to AEM at least once (`mvn clean install -PautoInstallPackage` **in the project root**).
 
 After running `npm start` **in the `ui.frontend` directory**, your app will be automatically opened in your browser (at path http://localhost:3000/content/etisalat/us/en/home.html). If you make edits, the page will reload.
 
 If you are getting errors related to CORS, you might want to configure AEM as follows:
 
-1. Navigate to the Configuration Manager (http://localhost:4504/system/console/configMgr)
+1. Navigate to the Configuration Manager (http://localhost:4502/system/console/configMgr)
 2. Open the configuration for "Adobe Granite Cross-Origin Resource Sharing Policy"
 3. Create a new configuration with the following additional values:
    - Allowed Origins: http://localhost:3000
